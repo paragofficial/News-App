@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mbsoftech/static/css/main.073c9b0a.css",
+    "main.js": "/mbsoftech/static/js/main.09ae58c5.js",
+    "static/js/787.998b4c01.chunk.js": "/mbsoftech/static/js/787.998b4c01.chunk.js",
+    "index.html": "/mbsoftech/index.html",
+    "main.073c9b0a.css.map": "/mbsoftech/static/css/main.073c9b0a.css.map",
+    "main.09ae58c5.js.map": "/mbsoftech/static/js/main.09ae58c5.js.map",
+    "787.998b4c01.chunk.js.map": "/mbsoftech/static/js/787.998b4c01.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.09ae58c5.js"
+  ]
+}
