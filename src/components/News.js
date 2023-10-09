@@ -47,24 +47,10 @@ export class News extends Component {
   }
 
   async componentDidMount() {
-    
-
     this.updateNews();
   }
 
-  handlePrevClick = async () => {
-    console.log("previous");
-   
-    this.setState({ page: this.state.page - 1 })
-    this.updateNews();
-  }
-
-  handleNextClick = async () => {
-    console.log("next");
-    
-    this.setState({ page: this.state.page + 1 })
-    this.updateNews();
-  }
+  
   fetchMoreData = async () => {
     this.setState({ page: this.state.page + 1 });
     const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
@@ -84,7 +70,7 @@ export class News extends Component {
     return (
       <>
         <h1 className="text-center " style={{ margin: "40px 0px", marginTop: "90px" }} >The INDIAN News - Top Headlines from {this.capatilizeFirstLetter(this.props.category)}</h1>
-        {/* {this.state.loading && <Spinner/>} */}
+       
         <InfiniteScroll
           dataLength={this.state.articles.length}
           next={this.fetchMoreData}
